@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Shopee</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--space">Kênh Người Bán</li>
+                        <li class="header__navbar-item header__navbar-item--space">Trở thành Người bán Shopee</li>
+                        <li class="header__navbar-item header__navbar-item--space header__navbar-appear">Tải ứng dụng
+                            <div class="header__qr">
+                                <img src="./assets/img/qrcode.png" alt="" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                    <img src="./assets/img/appstore.png" alt="" class="header__apps-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                    <img src="./assets/img/ggplay.png" alt="" class="header__apps-img"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item "> <span class="header__navbar-no-pointer">Kết nối </span> 
+                            <a href="" class="header__navbar-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a></li>
+                    </ul>
+                    <ul class="header__navbar-list ">
+                        <li class="header__navbar-item header__navbar-appear">
+                        <a href="" class="header__navbar-item-link ">
+                            <i class="header__navbar-icon far fa-bell"></i>
+                        </a>
+                        Thông Báo
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới</h3>
+                                </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <div class="">
+                                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="header__notify-img">
+                                                </div>
+                                                <div class="header__notify-info">
+                                                    <p class="header__notify-name">Iphone 13 vip pro</p>
+                                                    <p class="header__notify-sub">Xác thực chính hãng nguồn gốc các sản phẩm</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <div class="">
+                                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="header__notify-img">
+                                                </div>
+                                                <div class="header__notify-info">
+                                                    <p class="header__notify-name">Iphone 13 vip pro</p>
+                                                    <p class="header__notify-sub">Xác thực chính hãng nguồn gốc các sản phẩm</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <div class="">
+                                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="header__notify-img">
+                                                </div>
+                                                <div class="header__notify-info">
+                                                    <p class="header__notify-name">Iphone 13 vip pro</p>
+                                                    <p class="header__notify-sub">Xác thực chính hãng nguồn gốc các sản phẩm</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                <footer class="footer__notify-footer">
+                                    <button class="footer__notify-footer-btn">Xem tât cả</button>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon far fa-question-circle"></i>
+                        </a>Hỗ Trợ</li> 
+
+                        <!-- <li class="header__navbar-item header__navbar-item--space"><a href="" class="header__navbar-item-link">Đăng Ký<a>
+                          
+                        </li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Đăng Nhập</a></li> -->
+                        <div class="header__modal">
+                            <div class="header__modal-overlay d-none"></div>
+                            <div class="header__modal-body">
+                                    <!-- form Dangky  -->
+                                <!-- <div class="auth-form"> 
+                                   <div class="auth-form__container">
+                                        <div class="auth-form__header">
+                                            <h3 class="auth-form__heading">Đăng ký</h3>
+                                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                                        </div> 
+                                        <div class="auth-form__form">
+                                            <div class="auth-form__gp">
+                                                <input type="SDT" class="auth-form__input" placeholder="Nhập SDT">
+                                            </div><div class="auth-form__gp">
+                                                <input type="password" class="auth-form__input" placeholder="Nhập password">                                                
+                                            </div>
+                                            <div class="auth-form__gp">                                                    
+                                                <input type="password" class="auth-form__input" placeholder="Nhập lại password">
+                                            </div>
+                                        </div>
+                                        <div class="auth-form__aside">
+                                            <p class="auth-form__note">
+                                                Bằng việc đăng ký, bạn đã đồng ý với Shopee về
+                                                <a href="" class="auth-form__note-link">Điều khoản dịch vụ </a> &
+                                                <a href="" class="auth-form__note-link"> Chính sách bảo mật</a>
+                                            </p>
+                                        </div>
+                                        <div class="auth-form__control">
+                                             <button class="btn auth-form__control-back">TRỞ LẠI</button>                                                
+                                             <button class="btn btn--primary">ĐĂNG KÝ</button>
+                                        </div>
+                                    </div>
+                                    <div class="auth-form__socials">
+                                        <a href="" class="btn fb--icon btn--size-S btn--with-icon">
+                                            <i class="auth-form__socials-icon fab fa-facebook-square "></i>
+                                         <span class="auth-form__socials-title">Kết nối với facebook</span> 
+                                        </a>
+                                        <a href="" class="btn gg--icon btn--size-S btn--with-icon">
+                                            <i class="auth-form__social-icon fab fa-google "></i>
+                                            <span class="auth-form__socials-title">Kết nối với Google</span>
+                                        </a>
+                                    </div>
+                                </div> -->
+                                <!-- form dang nhap  
+                                <div class="auth-form"> 
+                                   <div class="auth-form__container">
+                                        <div class="auth-form__header">
+                                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                                            <span class="auth-form__switch-btn">Đăng ký</span>
+                                        </div> 
+                                        <div class="auth-form__form">
+                                            <div class="auth-form__gp">
+                                                <input type="SDT" class="auth-form__input" placeholder="Nhập SDT">
+                                            </div><div class="auth-form__gp">
+                                                <input type="password" class="auth-form__input" placeholder="Nhập password">                                                
+                                            </div>
+                                        </div>
+                                        <div class="auth-form__aside">
+                                            <p class="auth-form__help">
+                                                
+                                                <a href="" class="auth-form__help-link forget-right">Quên mật khẩu</a>
+                                                <a href="" class="auth-form__help-link">Cần trợ giúp</a>
+                                            </p>
+                                        </div>
+                                        <div class="auth-form__control">
+                                             <button class="btn auth-form__control-back">TRỞ LẠI</button>                                                
+                                             <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                                        </div>
+                                    </div>
+                                    <div class="auth-form__socials register">
+                                        <a href="" class="btn fb--icon btn--size-S btn--with-icon">
+                                            <i class="auth-form__socials-icon fab fa-facebook-square "></i>
+                                         <span class="auth-form__socials-title">Kết nối với facebook</span> 
+                                        </a>
+                                        <a href="" class="btn gg--icon btn--size-S btn--with-icon">
+                                            <i class="auth-form__social-icon fab fa-google "></i>
+                                            <span class="auth-form__socials-title">Kết nối với Google</span>
+                                        </a>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/NhatLinh.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Nhat Linh</span>
+                            <ul class="header__navbar-menu">
+                                <li class="header__navbar-menu-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-menu-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-menu-item">
+                                    <a href="">Đơn mưa</a>
+                                </li>
+                                <li class="header__navbar-menu-item">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__with-search">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <img src="./assets/img/Capture.PNG" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Bạn muốn tìm gì">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Điện thoại iphone</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Điện thoại iphone</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong shop</span>
+                            <i class="header__search-select-icon fas fa-chevron-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item item-active">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoai shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- no cart: add none-cart -->
+                            <div class="header__cart-list none-cart">
+                                <img src="./assets/img/9bdd8040b334d31946f49e36beaf32db.png" alt="" class="none-cart-img">
+                                <p class="header__cart-list-content">Chưa có sản phẩm</p>
+                                <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Iphone 13 </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">35.000.000vnd</span>
+                                                    <span class="header__cart-item-multiply">X</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-sub">Siêu max pro</span>
+                                                <span class="header__cart-item-remove">xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Iphone 13</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">35.000.000vnd</span>
+                                                    <span class="header__cart-item-multiply">X</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-sub">Siêu max pro</span>
+                                                <span class="header__cart-item-remove">xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Iphone 13</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">35.000.000vnd</span>
+                                                    <span class="header__cart-item-multiply">X</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-sub">Siêu max pro</span>
+                                                <span class="header__cart-item-remove">xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="header__cart-view btn btn--primary">Xem giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>  
+        <div class="app__container">
+           <div class="grid">
+            <div class="grid__row app__content">
+                <div class="grid__column-2">
+                 <nav class="category">
+                     <h3 class="category__heading">
+                        Danh mục</h3>
+                     <ul class="category__list">
+                         <li class="category__item category__item--active">
+                             <a href="" class="category__item-link">Iphone 13</a>
+                         </li>
+                         <li class="category__item">
+                             <a href="" class="category__item-link">Iphone 12</a>
+                         </li>
+                         <li class="category__item">
+                             <a href="" class="category__item-link">Iphone 11</a>
+                         </li>
+                     </ul>
+                 </nav>
+                </div>
+                <div class="grid__column-10">
+                    <div class="home">
+                        <span class="home__title">Sắp xếp theo</span>
+                        <button class="home__title-btn btn">Phổ biến</button>
+                        <button class="home__title-btn btn btn--primary">Mới nhất</button>
+                        <button class="home__title-btn btn">Bán chạy</button>
+                        <div class="select-input">
+                            <span class="select-input__label">Giá</span>
+                            <i class="select-input__label-icon fas fa-chevron-down"></i>
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home__page">
+                            <span class="home__page-num">
+                                <span class="home__page-current">
+                                    1</span><span>/14</span>
+                            </span>
+                            <div class="home__page-control">
+                                <a href="" class="home__page-control-btn btn-disabled">
+                                    <i class="control-btn fas fa-chevron-left"></i>
+                                </a>
+                                <a href="" class="home__page-control-btn">
+                                    <i class="control-btn fas fa-chevron-right"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <!-- Grid - Row - Column -->
+                        <div class="grid__row">
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2_4">
+                                <a class="product__item" href="http://">
+                                    <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
+                                    <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
+                                    <div class="product__item-price">
+                                        <span class="product__item-price-old">40.000.000đ</span>
+                                        <span class="product__item-price-new">39.900.000đ</span>
+                                    </div>
+                                    <div class="product__item-action">
+                                        <span class="product__item-heart product__item-hearted">
+                                            <i class="product__item-heart-icon far fa-heart"></i>
+                                            <!-- <i class="product__item-hearted-icon fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="product__item-star">
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="fas fa-star star-gold"></i> 
+                                            <i class="far fa-star"></i> 
+                                            <i class="far fa-star"></i>
+                                            <!-- <i class="far fa-star"></i> -->
+                                        </div>
+                                        <span class="product__item-sold">100 đã bán</span>
+                                    </div>
+                                    <div class="product__item-origin">
+                                        <span class="product__item-brand">Apple</span>
+                                        <span class="product__item-origin-name">Trái Đất</span>
+                                    </div>
+                                    <div class="product__item-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>
+                                            Yêu thích
+                                        </span>
+                                    </div>
+                                    <div class="product__item-sale-off">
+                                        <span class="product__item-percent">10%</span>
+                                        <span class="product__item-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                                  
+        
+                            
+                        </div>
+                    </div>
+                    <ul class="pagination product__pagination">
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item-link">
+                                <i class="pagination__item-icon fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item-link btn--active">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item-link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item-link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item-link">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item-link">5</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item-link">...</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item-link">14</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item-link">
+                                <i class="pagination__item-icon fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>               
+                </div>
+            </div>
+           </div>
+        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2_4">
+                        <h3 class="footer__heading">Chắm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer___item">
+                                <a href="" class="item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer___item">
+                                <a href="" class="item__link">Mail</a>
+                            </li>
+                            <li class="footer___item">
+                                <a href="" class="item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2_4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer___item">
+                                <a href="" class="item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer___item">
+                                <a href="" class="item__link">Mail</a>
+                            </li>
+                            <li class="footer___item">
+                                <a href="" class="item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2_4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer___item">
+                                <a href="" class="item__link">Iphone 13 Pro Max</a>
+                            </li>
+                            <li class="footer___item">
+                                <a href="" class="item__link">Iphone 12 Pro Max </a>
+                            </li>
+                            <li class="footer___item">
+                                <a href="" class="item__link">Iphone 11 Pro Max</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2_4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer___item">
+                                <a href="" class="item__link">
+                                    <i class="item-icon fab fa-facebook"></i>facebook
+                                </a>
+                            </li>
+                            <li class="footer___item">
+                                <a href="" class="item__link">
+                                    <i class="item-icon fab fa-youtube"></i>
+                                    youtube</a>
+                            </li>
+                            <li class="footer___item">
+                                <a href="" class="item__link">
+                                    <i class="item-icon fab fa-instagram"></i>instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2_4">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__downloaded">
+                            <img src="./assets/img/qrcode.png" alt="" class="footer__download-qr">
+                            <div class="footer__shop">
+                                <a href="" class="footer__shop-link">
+                                    <img src="./assets/img/appstore.png" alt="" class="footer__shop1">
+                                </a>
+                                <a href="" class="footer__shop-link">
+                                    <img src="./assets/img/ggplay.png" alt="" class="footer__shop1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid">
+                    <p class="footer__name"> Author Nguyễn Nhật Linh</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
