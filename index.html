@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <title>Shopee</title>
@@ -14,8 +16,8 @@
 <body>
     <div class="main">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--space">Kênh Người Bán</li>
                         <li class="header__navbar-item header__navbar-item--space">Trở thành Người bán Shopee</li>
@@ -198,11 +200,19 @@
                     </ul>
                 </nav>
                 <div class="header__with-search">
+                    <label for="moblie-search-checkbox" class="header__moblie-search">
+                        <i class="header__moblie-search-icon fas fa-search"></i>
+                    </label>
+                    
+                    
                     <div class="header__logo">
                         <a href="/" class="header__logo-link">
                             <img src="./assets/img/Capture.PNG" alt="" class="header__logo-img">
                         </a>
                     </div>
+
+                    <input type="checkbox" hidden id="moblie-search-checkbox" class="header__search-checkbox">
+
                     <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Bạn muốn tìm gì">
@@ -250,7 +260,7 @@
                                         <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Iphone 13 </h5>
+                                                <h5 class="header__cart-item-name">Iphone 13</h5>
                                                 <div class="header__cart-item-price-wrap">
                                                     <span class="header__cart-item-price">35.000.000vnd</span>
                                                     <span class="header__cart-item-multiply">X</span>
@@ -304,11 +314,17 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item"><a href="" class="header__sort-link">Liên quan</a></li>
+                <li class="header__sort-item"><a href="" class="header__sort-link header__sort-active">Mới nhất</a></li>
+                <li class="header__sort-item"><a href="" class="header__sort-link">Bán chạy</a></li>
+                <li class="header__sort-item"><a href="" class="header__sort-link">Giá</a></li>
+            </ul>
         </header>  
         <div class="app__container">
-           <div class="grid">
-            <div class="grid__row app__content">
-                <div class="grid__column-2">
+           <div class="grid wide">
+            <div class="row sm-gutter app__content">
+                <div class="col l-2 m-0 c-0">
                  <nav class="category">
                      <h3 class="category__heading">
                         Danh mục</h3>
@@ -325,8 +341,8 @@
                      </ul>
                  </nav>
                 </div>
-                <div class="grid__column-10">
-                    <div class="home">
+                <div class="col l-10 m- c-12">
+                    <div class="home hide-on-mobile-tablet">
                         <span class="home__title">Sắp xếp theo</span>
                         <button class="home__title-btn btn">Phổ biến</button>
                         <button class="home__title-btn btn btn--primary">Mới nhất</button>
@@ -359,10 +375,50 @@
                             </div>
                         </div>
                     </div>
+                    <nav class="mobile-category l-0">
+                        <ul class="mobile-category__list">
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Bàn phím cơ</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Tay nghe</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Chuột </a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Quẩn áo</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Bàn phím cơ</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Tay nghe</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Chuột </a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Quẩn áo</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Bàn phím cơ</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Tay nghe</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Chuột </a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Quẩn áo</a>
+                            </li>
+                        </ul>
+                    </nav>
                     <div class="product">
                         <!-- Grid - Row - Column -->
-                        <div class="grid__row">
-                            <div class="grid__column-2_4">
+                        <div class="row sm-gutter">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -401,7 +457,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2_4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -440,7 +496,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2_4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -479,7 +535,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2_4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -518,7 +574,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2_4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -557,7 +613,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2_4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -596,7 +652,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2_4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -635,7 +691,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2_4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -674,7 +730,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2_4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -713,7 +769,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2_4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="product__item" href="http://">
                                     <img src="./assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg" alt="" class="product__item-img">
                                     <h4 class="product__item-name">Iphone 13 Pro Max 2TB màu xanh blue được Linh sử dụng</h4>
@@ -751,10 +807,7 @@
                                         <span class="product__item-label">GIẢM</span>
                                     </div>
                                 </a>
-                            </div>
-                                  
-        
-                            
+                            </div>             
                         </div>
                     </div>
                     <ul class="pagination product__pagination">
@@ -795,9 +848,9 @@
            </div>
         </div>
         <footer class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2_4">
+            <div class="grid wide footer-content">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chắm sóc khách hàng</h3>
                         <ul class="footer__list">
                             <li class="footer___item">
@@ -811,21 +864,21 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2_4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer__list">
                             <li class="footer___item">
-                                <a href="" class="item__link">Trung tâm trợ giúp</a>
+                                <a href="" class="item__link">Giới thiệu</a>
                             </li>
                             <li class="footer___item">
-                                <a href="" class="item__link">Mail</a>
+                                <a href="" class="item__link">Tuyển dụng</a>
                             </li>
                             <li class="footer___item">
-                                <a href="" class="item__link">Hướng dẫn mua hàng</a>
+                                <a href="" class="item__link">Điều khoản</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2_4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Danh mục</h3>
                         <ul class="footer__list">
                             <li class="footer___item">
@@ -839,7 +892,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2_4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer__list">
                             <li class="footer___item">
@@ -859,7 +912,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2_4">
+                    <div class="col l-2-4 m-8 c-12">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__downloaded">
                             <img src="./assets/img/qrcode.png" alt="" class="footer__download-qr">
@@ -876,7 +929,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <div class="grid">
+                <div class="grid wide">
                     <p class="footer__name"> Author Nguyễn Nhật Linh</p>
                 </div>
             </div>

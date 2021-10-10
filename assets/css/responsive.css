@@ -1,0 +1,126 @@
+/* moblie and table */
+@media (max-width:1023px) {
+    :root{
+        --header-height:120px;
+        --navbar-height:0px;
+    }
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .header__cart-list{
+        position: fixed;
+        top:var(--header-height);
+        right:0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+    .header__cart-list::after{
+        display: none;
+    }
+    .app__container{
+        margin-top:calc(var(--header-height) + var(--header-sort-bar-height));
+    }
+    .header__sort-bar{
+        display:flex;
+    }
+
+    .btn.btn--primary{
+        margin-bottom: 10px;
+    }
+    
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-on-tablet{
+        display: none;
+    }
+    .header__cart{
+        width: 80px;
+        text-align:right;
+    }
+    .header__logo{
+        width: 120px;
+    }
+    .header__logo-img{
+        width: 100px;
+    }
+    .header__search-history{
+        top: 8%;
+    }
+    .app__content{
+        padding-top: 15px;
+    }
+}
+
+/* moblie */
+@media (max-width:739px) {
+    .hide-on-mobile{
+        display: none;
+    }
+    .header__logo,
+    .header__cart{
+        width: unset;
+    }
+    .header__with-search{
+        justify-content: space-between;
+    }
+
+    .header__search{
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        height:46px;
+        z-index: 1;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        padding: 0 16px;
+        animation: showSearchMoblie linear 0.5s;
+        display: none;
+    }
+    .header__search-history{
+        position: fixed;
+        top: calc(var(--header-height) + var(--header-sort-bar-height));
+        right: 0;
+        width: 100%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    .pagination__item{
+        margin:0;
+
+    }
+    .pagination__item-link{
+        height: 28px;
+        font-size: 1.6rem;
+        min-width: 36px;
+    }
+    .app__container{
+        margin: 0 10px;
+    }
+    .app__content{
+        margin-top: 140px;
+    }
+    .header__moblie-search{
+        display: block;
+    }
+    .footer-content{
+        padding: 0 16px;
+    }
+    @keyframes showSearchMoblie {
+        from{
+            opacity: 0;
+            top: calc(var(--header-height) / 2);
+        }
+        to{
+            opacity: 1;
+            top: var(--header-height);
+        }
+    }   
+}

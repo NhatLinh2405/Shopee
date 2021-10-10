@@ -1,5 +1,8 @@
+.main{
+    overflow:hidden;
+}
 .header{
-    height:133px;
+    /* height:133px; */
     background-image: linear-gradient(0, #fe6132 , #f63f2e);
 }
 
@@ -294,6 +297,47 @@
     animation: growTh linear 0.1;
 }
 
+/* header__sort-bar */
+.header__sort-bar{
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--header-sort-bar-height);
+    background-color: rgb(241, 241, 241);
+    border-top: 1px solid #686767;
+    display:none;
+}
+.header__sort-item{
+    flex: 1;
+}
+.header__sort-link{
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    display:block;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    line-height:var(--header-sort-bar-height);
+}
+
+.header__sort-link::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height:60%;
+    border-left: 1px solid #bebebe;
+    transform:translateY(-50%);
+}
+.header__sort-item:first-child .header__sort-link::before{
+    display: none;
+}
+.header__sort-link.header__sort-active{
+    color: red;
+}
+
+
 /* auth modal */
 .auth-form{
     width: 500px;
@@ -426,25 +470,38 @@
     margin-top: 190px;
 }
 .header__with-search{
-    height: 100px;
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
 }
+
+.header__moblie-search{
+    padding: 0 10px;
+    display: none;
+}
+
+.header__moblie-search-icon{
+    font-size:2.6rem;
+    color: #fff;
+}
+
 .header__logo{
     width: 200px
 }
+.header__logo-link{
+    line-height:0;
+    display: block;
+}
 .header__logo-img{
     width: 150px
-}
-.header__with-search{
-    display: flex;
-    align-items: center;
 }
 .header__search{
     background-color:#fff;
     height: 40px;
     flex: 1;
     border-radius: 2px;
-    display:flex;
     align-items: center;
+    display:flex;
 }
 .header__search-input-wrap{
     flex: 1;
@@ -459,6 +516,11 @@
     padding: 0 16px;
     align-items: center;
 }
+
+.header__search-checkbox:checked ~ .header__search{
+    display: flex;
+}
+
 .header__cart{
     width: 150px;
     text-align: center;
@@ -499,6 +561,8 @@
     display: inline-block;
     padding:0 10px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
 }
 /* .none-cart .none-cart-img,
 .none-cart .header__cart-list-content{
@@ -609,7 +673,7 @@
 }
 .header__search-history{
  position: absolute;
- top: 105px;
+ top: 22%;
  width: 40%;
  background-color: rgb(255, 255, 255);
  border-radius: 2px;
@@ -649,7 +713,7 @@
 }
 .header__cart-heading{
     text-align:left;
-    margin-bottom: 20px;
+    margin: 10px 0;
     font-size: 1.4rem;
     color: #5f5d5d;
 }
@@ -657,6 +721,7 @@
 .header__cart-list-item{
     padding-left: 0;
     overflow-y: auto;
+    max-height: 56vh;
 }
 /* .header__cart-list-item:hover{
     background-color: rgb(212, 209, 209)
@@ -786,7 +851,6 @@
     color: red;
 }
 
-
 .category__item-link{
     color: #505050;
     font-size: 1.4rem;
@@ -862,7 +926,54 @@
     color: rgb(160, 159, 159)
 }
 
+/* moblie category */
+
+.mobile-category{
+    
+}
+.mobile-category__list{
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+    padding-left: 0;
+}
+.mobile-category__list::-webkit-scrollbar{
+    display: none;
+}
+.mobile-category__item{
+    flex-shrink: 0;
+
+}
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link{
+    background-color: greenyellow;
+}
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link{
+    background-color: lightcyan;
+}
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link{
+    background-color: lightgreen;
+}
+.mobile-category__link{
+    font-size: 1.4rem;
+    color: rgb(17, 17, 17);
+    line-height: 4rem;
+    text-align: center;
+    width:110px;
+    height: 4rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 300;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 /* product */
+
 .product{
     margin-bottom:10px
 }
