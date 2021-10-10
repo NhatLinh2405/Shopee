@@ -1,9 +1,6 @@
 /* moblie and table */
 @media (max-width:1023px) {
-    :root{
-        --header-height:120px;
-        --navbar-height:0px;
-    }
+    
     .hide-on-mobile-tablet{
         display: none;
     }
@@ -39,6 +36,10 @@
 
 /* tablet */
 @media (min-width:740px) and (max-width:1023px) {
+    :root{
+        --header-height:68px;
+        --navbar-height:0px;
+    }
     .hide-on-tablet{
         display: none;
     }
@@ -53,7 +54,7 @@
         width: 100px;
     }
     .header__search-history{
-        top: 8%;
+        top: 90%;
     }
     .app__content{
         padding-top: 15px;
@@ -62,6 +63,10 @@
 
 /* moblie */
 @media (max-width:739px) {
+    :root{
+        --header-height:54px;
+        --navbar-height:0px;
+    }
     .hide-on-mobile{
         display: none;
     }
@@ -105,13 +110,27 @@
         margin: 0 10px;
     }
     .app__content{
-        margin-top: 140px;
+        margin-top: 80px;
     }
     .header__moblie-search{
         display: block;
     }
     .footer-content{
         padding: 0 16px;
+    }
+    .footer__heading{
+        text-align:center;
+    }
+    .item__link,
+    .footer__download{
+        justify-content: center;
+    }
+    .footer__shop{
+        flex:unset;
+    }
+    .footer__shop-link{
+        display:block;
+        padding: 5px 10px;
     }
     @keyframes showSearchMoblie {
         from{
